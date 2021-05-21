@@ -77,7 +77,13 @@ header{
 
         
     }
-    & .mobileNav{
+    & .plusBtn{
+
+        & .plusBtnCall{
+            > img{width:3rem;
+                -webkit-text-stroke : 0.5px #fff;
+            }
+        }
 
         & > i{
             position: fixed;
@@ -85,6 +91,7 @@ header{
             right:5%;
             font-size: 3rem;
             -webkit-text-stroke : 0.5px #fff;
+
             :hover{
                 display: none;
             }
@@ -92,11 +99,16 @@ header{
         & .toggle{
 
             position: fixed;
-            bottom: -20%;
+            bottom: -50%;
             right:5%;
             > a {
-               line-height: 3rem;
-               display: block;               
+               line-height: 5rem;
+               display: block;
+
+            }
+            .close{
+                font-size: 3rem;
+                -webkit-text-stroke : 0.5px #fff;
             }
         }
     }

@@ -82,7 +82,12 @@ header .nav > ul > li li {
   }
 }
 
-header .mobileNav > i {
+header .plusBtn .plusBtnCall > img {
+  width: 3rem;
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+header .plusBtn > i {
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -90,19 +95,24 @@ header .mobileNav > i {
   -webkit-text-stroke: 0.5px #fff;
 }
 
-header .mobileNav > i :hover {
+header .plusBtn > i :hover {
   display: none;
 }
 
-header .mobileNav .toggle {
+header .plusBtn .toggle {
   position: fixed;
-  bottom: -20%;
+  bottom: -50%;
   right: 5%;
 }
 
-header .mobileNav .toggle > a {
-  line-height: 3rem;
+header .plusBtn .toggle > a {
+  line-height: 5rem;
   display: block;
+}
+
+header .plusBtn .toggle .close {
+  font-size: 3rem;
+  -webkit-text-stroke: 0.5px #fff;
 }
 
 section {
