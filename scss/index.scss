@@ -11,11 +11,36 @@ $sectionHeight:930px;
 $footerHeight:150px;
 $proBoxHeight:25rem;
 
+@mixin mq ($screenWidth){
+    @if $screenWidth == "desktopBig"{
+        @media screen and (min-width:1201px) {
+            @content;
+        }
+    }
+    @else if $screenWidth == "table"{
+        @media screen and (min-width:601px) and (max-width:899px) {
+            @content;
+        }
+    }
+    @else if $screenWidth == "phone"{
+        @media screen and (max-width:600px) {
+            @content;
+        }
+    }
+    @else{}
+
+
+
+}
+
 
 /***************/
 body{
     background-image: url(../image/back01.jpg);
     background-size: cover;
+    @include mq("phone"){
+        background-size: 100%;
+    }
 }
 
 header{
@@ -35,14 +60,19 @@ header{
         width:50%;
         padding-left:15%;
         // background-color: yellowgreen;
-        & > ul > li {float:left;
+         & > ul > li {float:left;
                 width:calc(100% / 4);
                 text-align: center;
                 color:white;
                 font-size: 0.8rem;
                 &:hover{color:red}
-                li{display: none;}
-            }
+                li{display: none;} 
+                @include mq("phone"){
+                    display: none;
+                }
+        }
+
+        
     }
 }
 
@@ -57,7 +87,18 @@ section{
             text-align: center;
             letter-spacing: 0.4rem;
             font-weight: 100;
-            font-size: 1.5rem;}
+            font-size: 1.5rem;
+            @include mq("phone") {
+                width: 150px;
+                left: 20px;
+                text-align: left;
+                /* background-color: red; */
+                font-size: 1.5rem;
+                line-height: 2rem;
+                top: 45%;
+            }
+        }
+       
 
     }
 
@@ -78,4 +119,17 @@ section{
 footer{
     height: $footerHeight;
     background-color:#000;
+    color: #fff;
+    font-size: 0.7rem;
+    & > .bpx{width:80%; 
+            margin-left: 10%; 
+            background-color: red;
+            }
+    & .footer_left{
+        float:left;
+    }
+    & .footer_right{
+        float:left
+    }
+
 }
