@@ -35,6 +35,12 @@ header {
   left: 0;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
 header .header {
   margin-top: calc( 80px / 2 - 0.5rem);
 }
@@ -74,6 +80,29 @@ header .nav > ul > li li {
   header .nav > ul > li {
     display: none;
   }
+}
+
+header .mobileNav > i {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  font-size: 3rem;
+  -webkit-text-stroke: 0.5px #fff;
+}
+
+header .mobileNav > i :hover {
+  display: none;
+}
+
+header .mobileNav .toggle {
+  position: fixed;
+  bottom: -20%;
+  right: 5%;
+}
+
+header .mobileNav .toggle > a {
+  line-height: 3rem;
+  display: block;
 }
 
 section {

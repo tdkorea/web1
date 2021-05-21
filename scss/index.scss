@@ -49,6 +49,9 @@ header{
     height: $headerHeight;
     position: fixed;
     top:0; left:0;
+    @include mq ("phone"){
+        background-color: rgba(0,0,0,0);
+    }
 
     & .header{margin-top: calc( #{$headerHeight} / 2 - 0.5rem);}
     & .logo{float:left;
@@ -73,6 +76,29 @@ header{
         }
 
         
+    }
+    & .mobileNav{
+
+        & > i{
+            position: fixed;
+            bottom: 5%;
+            right:5%;
+            font-size: 3rem;
+            -webkit-text-stroke : 0.5px #fff;
+            :hover{
+                display: none;
+            }
+        }
+        & .toggle{
+
+            position: fixed;
+            bottom: -20%;
+            right:5%;
+            > a {
+               line-height: 3rem;
+               display: block;               
+            }
+        }
     }
 }
 
