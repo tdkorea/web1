@@ -197,23 +197,18 @@ section {
 section.sec1 .title {
   color: white;
   position: absolute;
-  top: 50%;
   left: calc(50% - 600px / 2);
   width: 600px;
   text-align: center;
   letter-spacing: 0.4rem;
   font-weight: 100;
-  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 600px) {
   section.sec1 .title {
-    width: 5rem;
+    width: 90%;
     left: 1.5rem;
     text-align: left;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    top: 45%;
     -webkit-animation-name: moveInRight;
             animation-name: moveInRight;
     -webkit-animation-duration: 2s;
@@ -222,6 +217,35 @@ section.sec1 .title {
             animation-delay: 0.5s;
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
+  }
+}
+
+section.sec1 .titleH1 {
+  top: 40%;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  section.sec1 .titleH1 {
+    width: 50px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    top: 30%;
+    font-weight: bold;
+  }
+}
+
+section.sec1 .titleH2 {
+  top: 50%;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  section.sec1 .titleH2 {
+    width: 80%;
+    font-size: 0.8rem;
+    line-height: 0.9rem;
+    top: 50%;
   }
 }
 

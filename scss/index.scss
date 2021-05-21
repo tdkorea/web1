@@ -162,29 +162,49 @@ section{
     height:$sectionHeight;
     color:red;
     &.sec1{        
-        .title{color:white;
+        & .title{
+            color:white;
             position:absolute;
-            top:50%; left:calc(50% - #{$titleWidth} / 2) ;
+            
+            left:calc(50% - #{$titleWidth} / 2) ;
             width: $titleWidth;
             text-align: center;
             letter-spacing: 0.4rem;
             font-weight: 100;
-            font-size: 1.5rem;
+            
             @include mq("phone") {
-                width: 5rem;
+                width: 90%;
                 left: 1.5rem;
                 text-align: left;
                 // background-color: red;
-                font-size: 1.5rem;
-                line-height: 2rem;
-                top: 45%;
-
+                
                 //keyframe
                 animation-name: moveInRight;
                 animation-duration: 2s;
                 animation-delay: 0.5s;
                 animation-fill-mode: backwards;
 
+            }
+        }
+        & .titleH1{
+            top:40%; 
+            font-size: 1.5rem;
+            @include mq("phone") {
+                width:50px;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                top: 30%;
+                font-weight: bold;
+            }
+        }
+        & .titleH2{
+            top:50%; 
+            font-size: 0.8rem;
+            @include mq("phone") {
+                width: 80%;
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+                top: 50%;
             }
         }
        
