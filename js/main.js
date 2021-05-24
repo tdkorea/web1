@@ -10,6 +10,8 @@ $(function(){
         $('.plusBtn .toggle ').animate({'bottom':'-50%'});
     })//.plusBtn
 
+    $('.lazy').lazy();
+
 
 
 })//fin.

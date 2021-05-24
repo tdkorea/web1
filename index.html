@@ -9,12 +9,27 @@
     <script src="js/main.js"></script>
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b2724d85e9.js" crossorigin="anonymous"></script>
+    <!-- as single plugin files -->
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.ajax.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.av.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.iframe.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.noop.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.picture.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.script.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.vimeo.min.js"></script>
+    <script type="text/javascript" src="js/plugins/jquery.lazy.youtube.min.js"></script>
+
+    <!-- or combined in one plugin file -->
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.plugins.min.js"></script>
+
 </head>
 <body>
     <header>
         <div class="logo header">
             <!-- <img src="image/logo.png" alt="logo"> -->
-            <p>BBWW</p>
+            <a href="#"><p>BBWW</p></a>
         </div>
         <div class="nav header">
             <ul>
@@ -61,14 +76,44 @@
         <h2 class="title titleH2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita voluptatum consequuntur sapiente ut in, nobis consectetur quod corporis voluptates earum repellendus libero? Magni est praesentium commodi qui tempore dolores. </h2>
     </section>
     <section class="sec2">
-        <div>
-            <div id="product" class="proBox1">1</div>
-            <div id="product" class="proBox2">2</div>
-            <div id="product" class="proBox3">3</div>
-            <div id="product" class="proBox4">4</div>
+        <h1>PRODUCT</h1>
+        
+        <!-- element will be handled by 'ajax' plugin -->
+        <!-- <img class="lazy" data-src="image/1.jpg" /> -->
+        <div class="sec2-flex">
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/2.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/1.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/3.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/4.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/5.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/6.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+            <div class="item">
+                <a href="https://smartstore.naver.com/busanbaoart/products/5159475712"><img class="lazy item1" data-src="image/2.jpg" /></a>
+                <p>wnanswpwkr</p>
+            </div>
+          
         </div>
+
     </section>
-    <section class="sec3">섹션3</section>
+    <!-- <section class="sec3">섹션3</section> -->
 
     <footer>
         <div class="bpx">

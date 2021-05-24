@@ -94,7 +94,7 @@ header .logo > img {
   }
 }
 
-header .logo > p {
+header .logo a > p {
   width: 100%;
   text-align: left;
   padding-left: 1.5rem;
@@ -106,7 +106,7 @@ header .logo > p {
 }
 
 @media screen and (max-width: 600px) {
-  header .logo > p {
+  header .logo a > p {
     right: 1.5rem;
     text-align: right;
     position: absolute;
@@ -194,6 +194,12 @@ section {
   color: red;
 }
 
+@media screen and (max-width: 600px) {
+  section {
+    height: 790px;
+  }
+}
+
 section.sec1 .title {
   color: white;
   position: absolute;
@@ -250,7 +256,54 @@ section.sec1 .titleH2 {
 }
 
 section.sec2 {
-  background-color: rgba(255, 255, 255, 0.5);
+  height: auto;
+  background-color: #ccc;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+section.sec2 h1 {
+  margin-bottom: 3rem;
+  display: block;
+  text-align: center;
+}
+
+section.sec2 .sec2-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.sec2 .sec2-flex .item {
+  display: block;
+  overflow: hidden;
+  height: 400px;
+  padding: 10px;
+}
+
+section.sec2 .sec2-flex .item img {
+  height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  section.sec2 .sec2-flex .item img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 footer {
