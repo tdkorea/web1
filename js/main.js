@@ -10,7 +10,14 @@ $(function(){
         $('.plusBtn .toggle ').animate({'bottom':'-50%'});
     })//.plusBtn
 
-    $('.lazy').lazy();
+    $('.lazy').lazy();//sec2 lazy
+
+    $('section.sec2 .sec2-flex .item a').hover(
+        function(){
+            $(this).find('img').attr('data-src',"image/9.jpg").replace('_off','_on')},
+        function(){
+            $(this).find('img').attr('data-src').replace('_on','_off')}
+        );//hover
 
 
 
